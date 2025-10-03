@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HNC Registered Agents | Privacy, Reliability, Convenience</title>
+  <meta name="description" content="HNC Registered Agents pairs you with Registered Agents Inc. for nationwide registered agent service that keeps your address private, receives legal mail, and includes annual report filing.">
+  <meta property="og:title" content="HNC Registered Agents">
+  <meta property="og:description" content="Nationwide registered agent service with privacy, reliable mail handling, and annual report filing included.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hnc-registered-agents.example.com/">
+  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=HNC+Registered+Agents"><!-- TODO: Replace OG image URL -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "HNC Registered Agents",
+    "url": "https://hnc-registered-agents.example.com/",
+    "sameAs": [
+      "https://www.example.com/"
+    ]
+  }
+  </script>
+  <!-- TODO: Insert GTM anti-flicker snippet -->
+  <style>
+    :root {
+      color-scheme: light;
+      --navy: #1F2A44;
+      --blue: #2F6FED;
+      --slate: #111827;
+      --muted: #6B7280;
+      --white: #FFFFFF;
+      --hairline: #E5E7EB;
+      --max-width: 1120px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      line-height: 1.5;
+      color: var(--slate);
+      background-color: #F9FAFB;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    a:focus-visible, button:focus-visible, select:focus-visible {
+      outline: 3px solid var(--blue);
+      outline-offset: 2px;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+
+    .skip-link:focus-visible {
+      position: fixed;
+      left: 1rem;
+      top: 1rem;
+      width: auto;
+      height: auto;
+      padding: 0.75rem 1.25rem;
+      background-color: var(--blue);
+      color: var(--white);
+      border-radius: 0.5rem;
+      z-index: 1100;
+      box-shadow: 0 8px 24px rgba(17, 24, 39, 0.2);
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 2px 8px rgba(17, 24, 39, 0.08);
+    }
+
+    .nav {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0.75rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: var(--navy);
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    header .brand img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.875rem 1.5rem;
+      border-radius: 999px;
+      background-color: var(--blue);
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      min-width: 44px;
+      min-height: 44px;
+      transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn:hover,
+    .btn:focus-visible {
+      background-color: #1d4ed8;
+      box-shadow: 0 6px 16px rgba(47, 111, 237, 0.25);
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      color: var(--blue);
+      border: 1px solid var(--blue);
+    }
+
+    main {
+      flex: 1;
+    }
+
+    .section {
+      padding: 3.5rem 1rem;
+    }
+
+    .section--hero {
+      background: linear-gradient(180deg, rgba(31, 42, 68, 0.98) 0%, rgba(31, 42, 68, 0.92) 100%);
+      color: var(--white);
+      text-align: center;
+      padding-top: 4.5rem;
+      padding-bottom: 4.5rem;
+    }
+
+    .section__inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    h1, h2, h3, h4 {
+      color: inherit;
+      margin-top: 0;
+      letter-spacing: -0.02em;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+      margin-bottom: 1.5rem;
+      color: var(--navy);
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+
+    .hero-subtext {
+      font-size: 1.05rem;
+      max-width: 680px;
+      margin: 0.75rem auto 2rem auto;
+      color: rgba(255, 255, 255, 0.88);
+    }
+
+    .trust-strip {
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem 1.25rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.82);
+      margin-top: 1.5rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      font-size: 0.85rem;
+      margin-top: 1.5rem;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .cta-group {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .stack {
+      display: grid;
+      gap: 2rem;
+    }
+
+    .info-card, .faq, .testimonials {
+      background-color: var(--white);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 12px 32px rgba(31, 42, 68, 0.08);
+    }
+
+    .split {
+      display: grid;
+      gap: 2rem;
+    }
+
+    .comparison-table {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .comparison-card {
+      background-color: var(--white);
+      border: 1px solid var(--hairline);
+      border-radius: 14px;
+      padding: 1.75rem;
+    }
+
+    .comparison-card h3 {
+      color: var(--navy);
+    }
+
+    .comparison-card ul {
+      padding-left: 1.25rem;
+      margin: 1rem 0 0 0;
+      color: var(--slate);
+    }
+
+    .comparison-card li {
+      margin-bottom: 0.75rem;
+    }
+
+    .benefits-grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      margin-top: 2rem;
+    }
+
+    .benefit-card {
+      background-color: var(--white);
+      border-radius: 14px;
+      padding: 1.75rem;
+      border: 1px solid var(--hairline);
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .benefit-card h3 {
+      color: var(--navy);
+      font-size: 1.25rem;
+    }
+
+    .steps {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      margin-top: 2rem;
+    }
+
+    .step {
+      background-color: var(--white);
+      border: 1px solid var(--hairline);
+      border-radius: 14px;
+      padding: 1.75rem;
+      display: grid;
+      gap: 0.75rem;
+    }
+
+    .step-number {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--blue);
+    }
+
+    .testimonials {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .testimonial {
+      border-left: 4px solid var(--blue);
+      padding-left: 1rem;
+      color: var(--slate);
+    }
+
+    .testimonial cite {
+      display: block;
+      margin-top: 0.5rem;
+      color: var(--muted);
+      font-style: normal;
+      font-size: 0.9rem;
+    }
+
+    details {
+      border: 1px solid var(--hairline);
+      border-radius: 12px;
+      padding: 1rem 1.25rem;
+      background-color: var(--white);
+    }
+
+    details + details {
+      margin-top: 0.75rem;
+    }
+
+    summary {
+      font-weight: 600;
+      color: var(--navy);
+      cursor: pointer;
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::after {
+      content: "+";
+      float: right;
+      font-size: 1.25rem;
+      transition: transform 0.2s ease;
+    }
+
+    details[open] summary::after {
+      transform: rotate(45deg);
+    }
+
+    .faq-content {
+      margin-top: 0.75rem;
+      color: var(--slate);
+    }
+
+    .microcopy {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .state-selector {
+      margin-top: 1.5rem;
+      display: grid;
+      gap: 0.75rem;
+      justify-items: center;
+    }
+
+    .state-selector label {
+      font-weight: 600;
+      color: var(--navy);
+    }
+
+    select {
+      width: 100%;
+      max-width: 320px;
+      padding: 0.75rem 1rem;
+      border-radius: 999px;
+      border: 1px solid var(--hairline);
+      background-color: var(--white);
+      color: var(--slate);
+      font-size: 1rem;
+      min-height: 44px;
+    }
+
+    .state-output {
+      font-weight: 600;
+      color: var(--white);
+    }
+
+    .serial-bar {
+      margin-top: 1.5rem;
+      padding: 1rem 1.5rem;
+      border-radius: 12px;
+      border: 1px solid rgba(31, 42, 68, 0.15);
+      background-color: rgba(47, 111, 237, 0.08);
+      color: var(--navy);
+      text-align: center;
+      font-weight: 600;
+    }
+
+    footer {
+      background-color: var(--navy);
+      color: rgba(255, 255, 255, 0.88);
+      padding: 3rem 1rem 4.5rem 1rem;
+    }
+
+    footer .section__inner {
+      text-align: center;
+    }
+
+    .footer-legal {
+      font-size: 0.85rem;
+      margin-top: 1rem;
+      color: rgba(255, 255, 255, 0.65);
+    }
+
+    .sticky-mobile-cta {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 0.75rem 1rem calc(env(safe-area-inset-bottom, 0) + 0.75rem) 1rem;
+      background-color: rgba(31, 42, 68, 0.95);
+      box-shadow: 0 -8px 24px rgba(17, 24, 39, 0.2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: calc(44px + env(safe-area-inset-bottom, 0));
+      z-index: 999;
+      gap: 0.75rem;
+    }
+
+    .sticky-mobile-cta .btn {
+      width: min(420px, 100%);
+    }
+
+    @media (min-width: 768px) {
+      .section {
+        padding: 4.5rem 1.5rem;
+      }
+
+      .cta-group {
+        flex-direction: row;
+      }
+
+      .sticky-mobile-cta {
+        display: none;
+      }
+
+      .section--hero {
+        text-align: left;
+      }
+
+      .hero-layout {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 2rem;
+        align-items: center;
+      }
+
+      .hero-content {
+        grid-column: span 7;
+      }
+
+      .hero-visual {
+        grid-column: span 5;
+      }
+
+      .hero-visual img {
+        width: 100%;
+        max-width: 360px;
+        height: auto;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 24px 60px rgba(15, 23, 42, 0.3);
+      }
+
+      .section--hero .state-selector {
+        justify-items: flex-start;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header>
+    <nav class="nav" aria-label="Primary">
+      <a href="/" class="brand" aria-label="HNC Registered Agents">
+        <img src="assets/hnc-logo.png"
+             alt="HNC Registered Agents logo"
+             width="160" height="32"
+             loading="eager" decoding="async"
+             style="display:block;height:auto;vertical-align:middle;">
+      </a>
+      <a class="btn" href="https://shareasale.com/r.cfm?b=2565835&amp;u=4598180&amp;m=155350&amp;urllink=www%2Eregisteredagentsinc%2Ecom%2Fplace%2Dan%2Dorder%2F&amp;afftrack=google_pmax" rel="sponsored noopener noreferrer" target="_blank">Get a Registered Agent</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="section section--hero" aria-labelledby="hero-heading">
+      <div class="section__inner hero-layout">
+        <div class="hero-content">
+          <h1 id="hero-heading">Everything You Need in One Registered Agent Service</h1>
+          <p class="hero-subtext">Every LLC or corporation must list a registered agent. Get a physical in-state address, ensure legal documents are received on time, and have your annual report filing included—so you can focus on your business.</p>
+          <div class="cta-group">
+            <a class="btn" href="https://shareasale.com/r.cfm?b=2565835&amp;u=4598180&amp;m=155350&amp;urllink=www%2Eregisteredagentsinc%2Ecom%2Fplace%2Dan%2Dorder%2F&amp;afftrack=google_pmax" rel="sponsored noopener noreferrer" target="_blank">Get a Registered Agent</a>
+            <a class="btn btn-secondary" href="#faq">See FAQs</a>
+          </div>
+          <div class="state-selector" aria-live="polite">
+            <label for="state">Registered Agent Service in</label>
+            <select id="state" name="state">
+              <option value="Your State">Select your state</option>
+              <option value="Alabama">Alabama</option>
+              <option value="Alaska">Alaska</option>
+              <option value="Arizona">Arizona</option>
+              <option value="Arkansas">Arkansas</option>
+              <option value="California">California</option>
+              <option value="Colorado">Colorado</option>
+              <option value="Connecticut">Connecticut</option>
+              <option value="Delaware">Delaware</option>
+              <option value="District of Columbia">District of Columbia</option>
+              <option value="Florida">Florida</option>
+              <option value="Georgia">Georgia</option>
+              <option value="Hawaii">Hawaii</option>
+              <option value="Idaho">Idaho</option>
+              <option value="Illinois">Illinois</option>
+              <option value="Indiana">Indiana</option>
+              <option value="Iowa">Iowa</option>
+              <option value="Kansas">Kansas</option>
+              <option value="Kentucky">Kentucky</option>
+              <option value="Louisiana">Louisiana</option>
+              <option value="Maine">Maine</option>
+              <option value="Maryland">Maryland</option>
+              <option value="Massachusetts">Massachusetts</option>
+              <option value="Michigan">Michigan</option>
+              <option value="Minnesota">Minnesota</option>
+              <option value="Mississippi">Mississippi</option>
+              <option value="Missouri">Missouri</option>
+              <option value="Montana">Montana</option>
+              <option value="Nebraska">Nebraska</option>
+              <option value="Nevada">Nevada</option>
+              <option value="New Hampshire">New Hampshire</option>
+              <option value="New Jersey">New Jersey</option>
+              <option value="New Mexico">New Mexico</option>
+              <option value="New York">New York</option>
+              <option value="North Carolina">North Carolina</option>
+              <option value="North Dakota">North Dakota</option>
+              <option value="Ohio">Ohio</option>
+              <option value="Oklahoma">Oklahoma</option>
+              <option value="Oregon">Oregon</option>
+              <option value="Pennsylvania">Pennsylvania</option>
+              <option value="Puerto Rico">Puerto Rico</option>
+              <option value="Rhode Island">Rhode Island</option>
+              <option value="South Carolina">South Carolina</option>
+              <option value="South Dakota">South Dakota</option>
+              <option value="Tennessee">Tennessee</option>
+              <option value="Texas">Texas</option>
+              <option value="Utah">Utah</option>
+              <option value="Vermont">Vermont</option>
+              <option value="Virginia">Virginia</option>
+              <option value="Washington">Washington</option>
+              <option value="West Virginia">West Virginia</option>
+              <option value="Wisconsin">Wisconsin</option>
+              <option value="Wyoming">Wyoming</option>
+            </select>
+            <p class="state-output" id="state-output">Registered Agent Service in Your State — $200/year</p>
+          </div>
+          <div class="trust-strip" role="text">
+            <span>Nationwide coverage</span>
+            <span>$200/yr per state</span>
+            <span>Annual report included</span>
+          </div>
+          <div class="badge" aria-hidden="true">All 50 States + D.C. + Puerto Rico</div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="" width="360" height="400" loading="lazy" decoding="async"><!-- TODO: Replace hero visual -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="what-agent">
+      <div class="section__inner stack">
+        <h2 id="what-agent">What Is a Registered Agent?</h2>
+        <p>A registered agent is the designated contact who receives service of process and official state correspondence on behalf of your company. Every state requires corporations and LLCs to list an agent with a physical in-state address who is available during business hours.</p>
+        <p>Missing or failing to designate an agent can jeopardize your ability to stay in good standing or respond to legal notices. HNC Registered Agents partners with Registered Agents Inc. so you receive timely notifications, document scans, and annual report filing support through one provider.</p>
+        <div>
+          <a class="btn" href="https://shareasale.com/r.cfm?b=2565835&amp;u=4598180&amp;m=155350&amp;urllink=www%2Eregisteredagentsinc%2Ecom%2Fplace%2Dan%2Dorder%2F&amp;afftrack=google_pmax" rel="sponsored noopener noreferrer" target="_blank">Get a Registered Agent</a>
+          <span class="microcopy">Prefer more detail? <a href="#faq">See FAQs</a></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="why-not-diy">
+      <div class="section__inner stack">
+        <h2 id="why-not-diy">Why Not DIY?</h2>
+        <div class="comparison-table" role="table" aria-label="Be Your Own Agent versus Hire HNC Registered Agents">
+          <div class="comparison-card" role="row">
+            <h3 role="columnheader">Be Your Own Agent</h3>
+            <ul>
+              <li>Must be at your listed address during business hours—even when traveling or meeting clients.</li>
+              <li>Your home or office address appears on public records, directories, and junk mail lists.</li>
+              <li>Managing multiple states means juggling different deadlines and annual reports on your own.</li>
+              <li>Missed service of process can lead to default judgments or loss of good standing.</li>
+            </ul>
+          </div>
+          <div class="comparison-card" role="row">
+            <h3 role="columnheader">Hire HNC Registered Agents</h3>
+            <ul>
+              <li>Professional registered office staffed during business hours to receive legal and state mail.</li>
+              <li>Keep your home address private while projecting a consistent, professional presence.</li>
+              <li>Streamline multi-state compliance with one nationwide provider and annual report filing included.</li>
+              <li>Receive alerts and document uploads so you can act quickly from anywhere.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="benefits">
+      <div class="section__inner">
+        <h2 id="benefits">Benefits of HNC Registered Agents (Powered by Registered Agents Inc.)</h2>
+        <p class="microcopy">Serve first-time founders, serial owners, and privacy-focused professionals with one reliable service.</p>
+        <div class="benefits-grid">
+          <article class="benefit-card">
+            <h3>Home Address Stays Private</h3>
+            <p>Use the registered office provided by Registered Agents Inc. on public filings so your personal address doesn’t appear in state databases.</p>
+          </article>
+          <article class="benefit-card">
+            <h3>Always Available for Legal Docs</h3>
+            <p>Service of process and official state mail is received during business hours, keeping you notified even when you’re with clients or traveling.</p>
+          </article>
+          <article class="benefit-card">
+            <h3>Annual Report: Done For You</h3>
+            <p>Your annual report filing is included with the service—reducing deadline anxiety and letting you focus on growth.</p>
+          </article>
+        </div>
+        <p class="serial-bar">One provider across states—simple, consistent, nationwide.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="how-it-works">
+      <div class="section__inner">
+        <h2 id="how-it-works">How It Works</h2>
+        <p>HNC Registered Agents connects you directly with Registered Agents Inc. for a streamlined onboarding experience.</p>
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Choose Your State(s)</h3>
+            <p>Select the state or states where you need registered agent coverage and enter your business details.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>Place Your Order</h3>
+            <p>Complete checkout at $200 per year, per state for professional registered agent service.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>Access Your Dashboard</h3>
+            <p>Receive login credentials to view scanned documents, track notices, and manage entities in one place.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">4</div>
+            <h3>Annual Report Handled</h3>
+            <p>Registered Agents Inc. prepares and files your annual report so you meet state deadlines without the stress.</p>
+          </div>
+        </div>
+        <div class="cta-group" style="margin-top:2rem;">
+          <a class="btn" href="https://shareasale.com/r.cfm?b=2565835&amp;u=4598180&amp;m=155350&amp;urllink=www%2Eregisteredagentsinc%2Ecom%2Fplace%2Dan%2Dorder%2F&amp;afftrack=google_pmax" rel="sponsored noopener noreferrer" target="_blank">Get Started</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="testimonials">
+      <div class="section__inner testimonials">
+        <h2 id="testimonials">Trusted by Entrepreneurs Who Value Privacy and Reliability</h2>
+        <blockquote class="testimonial">
+          <p>“As a first-time founder, I didn’t want to risk missing legal notices. Having a registered agent keep everything organized lets me focus on launch.”</p>
+          <cite>— Early-stage LLC owner</cite>
+        </blockquote>
+        <blockquote class="testimonial">
+          <p>“We operate in six states. Using one provider means our reminders and reports are all handled the same way everywhere.”</p>
+          <cite>— Multi-state retail group</cite>
+        </blockquote>
+        <blockquote class="testimonial">
+          <p>“I work from home and travel often. Knowing there’s a business address handling mail during the day keeps my home private.”</p>
+          <cite>— Freelance consultant</cite>
+        </blockquote>
+        <div class="trust-strip" style="color:var(--navy);">
+          <span>All 50 States + D.C. &amp; Puerto Rico</span>
+          <span>Annual Report Included</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq" aria-labelledby="faq-heading">
+      <div class="section__inner">
+        <h2 id="faq-heading">Frequently Asked Questions</h2>
+        <details>
+          <summary>Do I need a registered agent for an LLC?</summary>
+          <div class="faq-content">
+            <p>Yes. Every state requires LLCs and corporations to maintain a registered agent with a physical address in the state to receive service of process and official notices.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Can I be my own agent?</summary>
+          <div class="faq-content">
+            <p>You can, but you must be available at your listed address during business hours and accept that your address will become part of the public record. Many owners choose a professional service to preserve privacy and avoid missed deliveries.</p>
+          </div>
+        </details>
+        <details>
+          <summary>What does a registered agent do? What is service of process?</summary>
+          <div class="faq-content">
+            <p>A registered agent receives legal documents (service of process) and official mail from the state, then promptly notifies you so you can respond. Registered Agents Inc. scans and uploads documents to your dashboard.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Is an agent required in every state where I do business?</summary>
+          <div class="faq-content">
+            <p>Yes. If you register your company to do business in multiple states, you must appoint a registered agent in each state. HNC Registered Agents connects you with nationwide coverage through one provider.</p>
+          </div>
+        </details>
+        <details>
+          <summary>What’s included for $200/year?</summary>
+          <div class="faq-content">
+            <p>The Registered Agents Inc. service provides a physical in-state address, document acceptance during business hours, digital delivery of service of process and official mail, plus annual report filing included.</p>
+          </div>
+        </details>
+        <details>
+          <summary>How does annual report filing work?</summary>
+          <div class="faq-content">
+            <p>Registered Agents Inc. tracks your due dates, prepares the annual report with the information you provide, and files it on your behalf as part of the service.</p>
+          </div>
+        </details>
+        <details>
+          <summary>What happens if an agent misses a document?</summary>
+          <div class="faq-content">
+            <p>Professional registered agents are staffed during business hours specifically to receive service of process. They promptly notify you so you can respond and avoid default judgments or penalties.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Can I change my registered agent? How?</summary>
+          <div class="faq-content">
+            <p>Yes. After ordering, Registered Agents Inc. provides the forms and instructions to update your registered agent with the state. Most states allow online filings, and the provider can assist with the process.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Are registered agent addresses public?</summary>
+          <div class="faq-content">
+            <p>States publish the registered office address in business registries. Using a professional service keeps your personal address off those public records.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Can non-US founders use this service?</summary>
+          <div class="faq-content">
+            <p>Yes. International founders can appoint Registered Agents Inc. to satisfy state requirements for a domestic registered agent with a physical address.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="section__inner">
+      <h2 style="color:inherit;">Your Compliance Partner for Every State You Enter</h2>
+      <p>Keep your address private, never miss a legal notice, and have annual reports filed for you.</p>
+      <a class="btn" href="https://shareasale.com/r.cfm?b=2565835&amp;u=4598180&amp;m=155350&amp;urllink=www%2Eregisteredagentsinc%2Ecom%2Fplace%2Dan%2Dorder%2F&amp;afftrack=google_pmax" rel="sponsored noopener noreferrer" target="_blank">Get a Registered Agent</a>
+      <p class="footer-legal">© <span id="year"></span> HNC Registered Agents. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="sticky-mobile-cta" role="region" aria-label="Quick access to get a registered agent">
+    <a class="btn" href="https://shareasale.com/r.cfm?b=2565835&amp;u=4598180&amp;m=155350&amp;urllink=www%2Eregisteredagentsinc%2Ecom%2Fplace%2Dan%2Dorder%2F&amp;afftrack=google_pmax" rel="sponsored noopener noreferrer" target="_blank">Get a Registered Agent</a>
+  </div>
+
+  <script defer>
+    (function () {
+      const yearEl = document.getElementById('year');
+      if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+      }
+      const stateSelect = document.getElementById('state');
+      const stateOutput = document.getElementById('state-output');
+      if (stateSelect && stateOutput) {
+        const updateState = () => {
+          const value = stateSelect.value;
+          stateOutput.textContent = `Registered Agent Service in ${value} — $200/year`;
+        };
+        stateSelect.addEventListener('change', updateState);
+      }
+    })();
+  </script>
+</body>
+</html>
